@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Julius Mariot — Front-End Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div><div id="morph"></div>
+<nav><a href="#home" class="logo">&lt;JM /&gt;</a><button id="burger" aria-label="Menu">☰</button>
+<div class="links" id="links"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#github">GitHub</a><a href="#contact">Contact</a></div></nav>
+<main>
+<section id="home" class="hero">
+<div><span class="tag rv">● Open to opportunities</span>
+<h1 class="rv" style="--d:.1s">Hi, I’m <span class="grad">Julius Mariot</span></h1>
+<p class="role rv" style="--d:.2s"><b id="typed"></b><i></i></p>
+<p class="rv" style="color:var(--mu);--d:.3s">Fresh BSIT Graduate • Aspiring Front-End Developer building responsive, interactive interfaces that solve real-world problems.</p>
+<div class="cta rv" style="--d:.4s"><a class="btn p" href="#projects">View Projects</a><button class="btn" id="resumeBtn">⬇ Download Resume</button><a class="btn" href="https://github.com/juliusmariot-oss" target="_blank" rel="noopener">GitHub ↗</a></div></div>
+<div class="avatar rv" style="--d:.3s"><div class="m"></div><div class="ph"></div></div>
+</section>
+
+<section id="about"><h2 class="rv">About <span class="grad">Me</span></h2><p class="sub rv">Perseverance and continuous learning drive everything I build.</p>
+<div class="grid g2"><div class="glass about rv"><ul><li>Front-End Developer</li><li>Improving my skills in JavaScript, React, and UI/UX</li><li>Interested in responsive design and interactive interfaces</li><li>I enjoy creating projects that solve real-world problems</li><li>Currently learning and building personal projects</li></ul></div>
+<div class="grid" style="grid-template-columns:1fr 1fr"><div class="glass rv" style="--d:.1s"><div class="num grad" data-n="3">0</div>Featured projects</div><div class="glass rv" style="--d:.2s"><div class="num grad" data-n="10">0</div>Tools &amp; techs</div><div class="glass rv" style="--d:.3s;grid-column:1/-1"><b>🎓 Education</b><br><span style="color:var(--mu)">Bachelor of Science in Information Technology (BSIT)</span></div></div></div></section>
+
+<section id="skills"><h2 class="rv">Technologies &amp; <span class="grad">Tools</span></h2><p class="sub rv">Tap a filter and watch the chips morph.</p>
+<div class="tabs rv" id="tabs"><button class="on" data-f="all">All</button><button data-f="fe">Front-End</button><button data-f="tool">Tools</button></div>
+<div class="chips rv" id="chips"></div></section>
+
+<section id="projects"><h2 class="rv">Featured <span class="grad">Projects</span></h2><p class="sub rv">Click a card for details — hover for a 3D tilt.</p>
+<div class="grid g3" id="projGrid"></div></section>
+
+<section id="github"><h2 class="rv">GitHub <span class="grad">Stats</span></h2><p class="sub rv">Live data loads from the GitHub API when available.</p>
+<div class="grid g3"><div class="glass rv"><div class="num grad" id="sRepos">—</div>Public repositories</div><div class="glass rv" style="--d:.1s"><div class="num grad" id="sFol">—</div>Followers</div><div class="glass rv" style="--d:.2s"><div class="num grad" id="sFollowing">—</div>Following</div></div>
+<div class="cta rv"><a class="btn p" href="https://github.com/juliusmariot-oss" target="_blank" rel="noopener">Visit GitHub Profile ↗</a><a class="btn" href="https://github.com/juliusmariot-oss?tab=repositories" target="_blank" rel="noopener">Browse Repositories ↗</a></div>
+<div class="glass work rv" style="margin-top:26px"><h3 style="margin-bottom:8px">What I’m Currently Working On</h3><ul><li>Improving my JavaScript skills</li><li>Learning React.js</li><li>Building responsive websites</li><li>Improving UI/UX design</li><li>Creating more real-world projects</li></ul></div></section>
+
+<section id="contact"><h2 class="rv">Contact <span class="grad">Me</span></h2><p class="sub rv">Let’s build something together.</p>
+<div class="grid g2"><div class="glass rv"><h3 style="margin-bottom:14px">Get in touch</h3><p style="color:var(--mu)">juliusmariot@gmail.com</p><div class="row" style="margin:16px 0"><a class="btn sm p" href="mailto:juliusmariot@gmail.com">✉ Email Me</a><button class="btn sm" id="copyMail">Copy Email</button><a class="btn sm" href="https://github.com/juliusmariot-oss" target="_blank" rel="noopener">GitHub ↗</a></div></div>
+<form class="glass rv" id="cf" style="--d:.1s"><input id="cn" placeholder="Your name" required><input id="ce" type="email" placeholder="Your email" required><textarea id="cm" rows="4" placeholder="Your message" required></textarea><button class="btn p" type="submit">Send Message</button></form></div></section>
+</main>
+<footer>Thanks for visiting my profile! ✦ © <span id="yr"></span> Julius Mariot</footer>
+
+<div class="ov" id="ov"><div class="glass md" id="md"></div></div>
+<div class="toast" id="toast"></div>
+<div id="rprint" style="display:none"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
